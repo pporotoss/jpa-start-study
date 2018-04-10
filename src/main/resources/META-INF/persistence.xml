@@ -9,7 +9,7 @@
     <persistence-unit name="jpastart" transaction-type="RESOURCE_LOCAL">
         <class>jpastart.reserve.model.User</class>
 
-        <!-- true 설정시 <class> 태그로 지정하지 않은 클래스는 관리대상에 포함하지 않는다. => 자동검색X -->
+        <!-- true 설정시 <class> 태그로 지정하지 않은 클래스는 관리대상에 포함하지 않는다. => 자동검색(X) -->
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
         <properties>
