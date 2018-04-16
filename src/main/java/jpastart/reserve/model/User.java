@@ -37,4 +37,8 @@ public class User {
     public Date getCreateDate() {
         return createDate;
     }
+    
+    public void changeName(String newName) {
+        this.name = newName;
+    }
 }

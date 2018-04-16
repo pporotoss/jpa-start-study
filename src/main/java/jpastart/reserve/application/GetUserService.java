@@ -12,7 +12,7 @@ public class GetUserService {
     
         EntityManager em = EMF.createEntityManager();
         try {
-            User user = em.find(User.class, email);
+            User user = em.find(User.class, email); // primary키로 조회
             return Optional.ofNullable(user);
         }
         finally {
